@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+void number(int);
 int main() {
   long int cardnumber;
   cout << "請輸入信用卡號:\n";
@@ -22,14 +23,14 @@ int main() {
       n = cardnumber % 1000 / 100,
       o = cardnumber % 100 / 10 * 2,
       z = cardnumber % 10;
-  if ( a >= 10 ) a = a / 10 + a % 10;
-  if ( c >= 10 ) c = c / 10 + c % 10;
-  if ( e >= 10 ) e = e / 10 + e % 10;
-  if ( g >= 10 ) g = g / 10 + g % 10;
-  if ( i >= 10 ) i = i / 10 + i % 10;
-  if ( k >= 10 ) k = k / 10 + k % 10;
-  if ( m >= 10 ) m = m / 10 + m % 10;
-  if ( o >= 10 ) o = o / 10 + o % 10;
+  number(a);
+  number(c);
+  number(e);
+  number(g);
+  number(i);
+  number(k);
+  number(m);
+  number(o);
   int w = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o % 10;
   if ( w != 0 ) w = 10 - w;
   if ( w = z ) {
@@ -38,4 +39,9 @@ int main() {
     else cout << "這是其他信用卡。";
   }
   else cout << "這是其他信用卡。";
+}
+void number(int number) {
+  if ( number >= 10 ) {
+    number = number / 10 + number % 10;
+  }
 }
