@@ -33,7 +33,7 @@ int main() {
   number(o);
   int w = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o % 10;
   if ( w != 0 ) w = 10 - w;
-  if ( w = z ) {
+  if ( w == z ) {
     if ( x == 4 ) cout << "這是Visa card。";
     else if ( x == 5 && y <=55 && y >= 51 ) cout << "這是Master card。";
     else cout << "這是其他信用卡。";
