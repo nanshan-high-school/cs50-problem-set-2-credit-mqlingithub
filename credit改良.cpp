@@ -30,7 +30,7 @@ int main() {
   else {
     checknumber = 10 - total % 10;
   }
-  if ( total % 10 == 0 ) {
+  if ( ( total + checknumber ) % 10 == 0 ) {
     if ( cardnumber == 4 ) cout << "這是Visa card。";
     else if ( cardnumber == 5 ) cout << "這是Master card。";
     else cout << "這是其他信用卡。";
